@@ -31,8 +31,10 @@ Table of Contents:
     2. Typography
 ////////////////////////*/
 
-body {
+body * {
     font-family: Poppins, Tahoma, sans-serif;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 /*////////////////////////
@@ -44,6 +46,71 @@ body {
 /*///////////// 3.1 Header /////////////*/
 
 
+.header-container {
+    color: #1C2B32;
+    width: 100%;
+    margin: auto;
+    padding: 250px 0;
+    background-image: url("../assets/images/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    margin-top: -150px;
+}
+
+.header-text {
+    padding-top: 20px;
+    text-align: center;
+    margin-top: -20px;
+    color: #1C2B32;
+    font-size: 10px;
+
+}
+
+.header-form {
+    width: 50%;
+    position: absolute;
+}
+
+.header-form-button {
+    background-color: #1C2B32;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-family: 'Poppins', Tahoma, sans-serif;
+    position: relative;
+    left: 70%;
+    transform: translate(0, -50%);
+    margin: 40px auto 40px -5px;
+    padding: 15.5px;
+    border: 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+}
+
+.header-form-text {
+    border: 2px solid #1C2B32;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    position: relative;
+    left: 70%;
+    transform: translate(0, -50%);
+    margin: 40px auto;
+    padding: 14px 30px 14px 14px;
+    background: transparent;
+    font-size: 10px;
+    color: #1C2B32;
+}
+
+input::placeholder {
+    color: #1C2B32;
+}
 
 /*///////////// 3.2 Testimonial /////////////*/
 
