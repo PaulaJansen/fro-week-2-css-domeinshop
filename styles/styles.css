@@ -27,14 +27,27 @@ Table of Contents:
     padding: 0;
 }
 
+main * {
+    overflow-y: auto;
+    width: 100%;
+}
+
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 
 body * {
     font-family: Poppins, Tahoma, sans-serif;
+    font-size: 13px;
+    color: #1C2B32;
     margin: 0 auto;
-    max-width: 1000px;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 27px;
+    margin-top: 20px;
 }
 
 /*////////////////////////
@@ -45,50 +58,47 @@ body * {
 
 /*///////////// 3.1 Header /////////////*/
 
-
-.header-container {
-    color: #1C2B32;
-    width: 100%;
-    margin: auto;
-    padding: 250px 0;
+header {
     background-image: url("../assets/images/mountains.jpg");
     background-size: cover;
     background-position: center;
-    position: absolute;
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 250px 0;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
     position: relative;
-    margin-top: -150px;
+    margin-top: -210px;
 }
 
 .header-text {
-    padding-top: 20px;
+    padding: 25px 0;
     text-align: center;
     margin-top: -20px;
-    color: #1C2B32;
-    font-size: 10px;
-
 }
 
 .header-form {
-    width: 50%;
+    width: 100%;
     position: absolute;
 }
 
 .header-form-button {
     background-color: #1C2B32;
     color: #FFFFFF;
-    font-size: 10px;
+    font-size: 13px;
     font-family: 'Poppins', Tahoma, sans-serif;
     position: relative;
-    left: 70%;
+    left:20%;
     transform: translate(0, -50%);
     margin: 40px auto 40px -5px;
-    padding: 15.5px;
-    border: 0;
+    padding: 14px;
+    border: 2px solid #1C2B32;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 
@@ -99,29 +109,90 @@ h1 {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     position: relative;
-    left: 70%;
+    left: 20%;
     transform: translate(0, -50%);
     margin: 40px auto;
-    padding: 14px 30px 14px 14px;
+    padding: 14px 40px 14px 14px;
     background: transparent;
-    font-size: 10px;
-    color: #1C2B32;
+    font-size: 13px;
 }
 
 input::placeholder {
     color: #1C2B32;
+    width: 100%;
 }
 
 /*///////////// 3.2 Testimonial /////////////*/
+.testimonial {
+    max-width: 1000px;
+    margin: 30px auto;
+    font-size: 12px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 50px 90px;
+}
 
+.quotes {
+    width: 20px;
+    position: relative;
+    margin-bottom:-25px;
+    margin-left:-30px;
+}
 
+.avatar {
+    position: relative;
+    width: 44px;
+    border-radius: 50%;
+    margin: 15px 0;
+
+}
+
+.name-avatar {
+    font-style: italic;
+    display: inline;
+}
 
 /*///////////// 3.3 Support /////////////*/
+.contact-container * {
+    max-width: 1000px;
 
+}
 
+.contact-callcenter {
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.help {
+    margin: 30px 0;
+    display: ;
+}
+
+.contact-button {
+    background-color: #1C2B32;
+    color: #FFFFFF;
+    font-size: 13px;
+    border-radius: 30px;
+    padding: 20px 20px;
+    width: 160px;
+    margin: auto;
+
+}
 
 /*///////////// 3.4 Faq /////////////*/
+.faq {
 
+}
 
 
 /*///////////// 3.5 Footer /////////////*/
+.copyright {
+    background-color:  #1C2B32;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 10px;
+    margin: 0 auto;
+    padding: 20px;
+}
