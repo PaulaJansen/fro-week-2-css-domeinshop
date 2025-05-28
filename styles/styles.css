@@ -44,11 +44,10 @@ body * {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 23px;
     text-align: center;
     padding: 27px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 /*////////////////////////
@@ -92,8 +91,6 @@ h1 {
 .header-form-button {
     background-color: #1C2B32;
     color: #FFFFFF;
-    font-size: 13px;
-    font-family: 'Poppins', Tahoma, sans-serif;
     padding: 14px;
     border: 2px solid #1C2B32;
     border-top-right-radius: 30px;
@@ -104,14 +101,13 @@ h1 {
     color: #899CA0;
 }
 
-.header-form-text {
+#search-field {
     border: 2px solid #1C2B32;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     margin-right: -5px;
     padding: 14px 40px 14px 14px;
     background: transparent;
-    font-size: 13px;
 }
 
 input::placeholder {
@@ -120,13 +116,16 @@ input::placeholder {
 }
 
 /*///////////// 3.2 Testimonial /////////////*/
+.testimonials-container {
+    overflow: visible;
+}
+
 .testimonial {
     width: 100%;
     margin: 30px auto;
-    font-size: 12px;
+    padding: 50px 70px;
     border-radius: 5px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    padding: 50px 70px;
 }
 
 .quotes {
@@ -136,29 +135,25 @@ input::placeholder {
     margin-left:-30px;
 }
 
-/*NOG WERKEN AAN HET INLINE KRIJGEN VD ELEMENTEN EN HET DOORTREKKEN VAN DE BOX-SHADOW*/
-
 .avatar {
     width: 44px;
     border-radius: 50%;
-    margin: 15px 5px;
-    display: inline-block;
+    margin: 20px 5px;
 }
 
 .name-avatar {
     font-style: italic;
     display: inline-block;
+    position: absolute;
+    margin: 30px 20px;
 }
 
 /*///////////// 3.3 Support /////////////*/
 .contact-container * {
     width: 100%;
-
 }
 
 .contact-callcenter {
-    width: 100%;
-    display: block;
     margin: 0 auto 30px auto;
     border-radius: 5px;
 }
@@ -172,18 +167,17 @@ input::placeholder {
 }
 
 .contact-button {
+    width: 160px;
     background-color: #1C2B32;
     color: #FFFFFF;
-    font-size: 13px;
-    border-radius: 30px;
-    padding: 20px 20px;
-    width: 160px;
     margin: 30px auto 0 auto;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 30px;
 }
 
 .contact-button:hover {
     background-color: #899CA0;
-    border: 0;
 }
 
 /*///////////// 3.4 Faq /////////////*/
@@ -195,23 +189,22 @@ summary:hover {
      cursor: pointer;
 }
 
-.faq:open >summary {
+.faq:open > summary {
     padding: 10px;
 }
 
 details > p {
+    width: 60%;
     background-color: #899CA0;
     border-radius: 5px;
     color: #FFFFFF;
-    padding: 20px;
-    width: 60%;
     margin: 0;
+    padding: 20px;
 }
-
 
 /*///////////// 3.5 Footer /////////////*/
 .copyright {
-    background-color:  #1C2B32;
+    background-color: #1C2B32;
     text-align: center;
     color: #FFFFFF;
     font-size: 10px;
